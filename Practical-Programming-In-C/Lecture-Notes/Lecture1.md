@@ -105,6 +105,37 @@
 - New -> C Project -> Hello world ANSI C Project (for simple project)
     - "Linux GCC toolchain" sets up gcc and gdb
 
+## Structure of a .c file
+
+- begin with comments about file contents
+``` /* comment */ ```
+- insert statements and preprocessor definitions
+``` #include <stdio.h> ```
+- function prototypes and variable declarations
+``` const char[] msg = "a raw string"; ```
+- define main() function
+```
+int main(void)
+{
+    const char msg[] = "Hello world";
+    puts(msg);
+    return 0;
+}
+```
+- define other functions
+
+## Comments
+
+- can span multiple lines in the format above
+- ignored completely by the compiler
+- may appear anywhere in program
+
+## The #include Macro
+
+- macros are code that is replaced by their value
+- the #include macro reads in the contents of a header file
+    - e.g. #include <stdio.h> - provides basic I/O functionality
+
 ## Hello World
 
 - [Hello World C program](../Programs/HelloWorld.c)
